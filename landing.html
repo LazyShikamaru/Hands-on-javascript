@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-on JavaScript: Learn JS in 60 Days | Project-Based Learning</title>
+    <meta name="description" content="Become a confident JavaScript developer in 60 days with Hands-on JavaScript! Our project-based learning platform offers hands-on coding, real-world projects, and a clear roadmap from beginner to mastery. Start your JS journey today!">
+    <meta name="keywords" content="Hands-on JavaScript, JavaScript, learn JavaScript, JavaScript course, JavaScript projects, coding bootcamp, web development, AEO JavaScript, answer engine JavaScript, learn to code, JavaScript for beginners, 60 day JavaScript challenge">
+    <link rel="canonical" href="https://gctakahd.manus.space/landing.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hands-on JavaScript: Learn JS in 60 Days | Project-Based Learning">
+    <meta property="og:description" content="Become a confident JavaScript developer in 60 days with Hands-on JavaScript! Our project-based learning platform offers hands-on coding, real-world projects, and a clear roadmap from beginner to mastery.">
+    <meta property="og:image" content="https://gctakahd.manus.space/social_preview.png">
+    <meta property="og:url" content="https://gctakahd.manus.space/landing.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Hands-on JavaScript: 60 Days">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hands-on JavaScript: Learn JS in 60 Days | Project-Based Learning">
+    <meta name="twitter:description" content="Become a confident JavaScript developer in 60 days with Hands-on JavaScript! Our project-based learning platform offers hands-on coding, real-world projects, and a clear roadmap from beginner to mastery.">
+    <meta name="twitter:image" content="https://gctakahd.manus.space/social_preview.png">
+
+    <!-- Fonts (Gratisan for headers, Work Sans for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gratisan" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> <!-- Main stylesheet -->
+    <link rel="stylesheet" href="landing-style.css"> <!-- Landing page specific styles -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+    <!-- FAQPage Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Hands-on JavaScript: 60 Days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hands-on JavaScript: 60 Days is an online educational platform designed to teach beginners JavaScript programming through a structured, 60-day roadmap. The core philosophy is anti-passive learning, requiring users to complete three hands-on coding projects for each daily lesson to progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Hands-on JavaScript platform work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The platform unlocks lessons sequentially. Learners start with Day 1 and must complete all three coding projects for that day to unlock the next. Lessons 1-14 are initially available. After completing these, one new lesson (Days 15-60) unlocks per day, contingent on completing the previous day's projects. Progress is tracked using local browser storage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should use Hands-on JavaScript: 60 Days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This platform is ideal for absolute beginners, aspiring web developers, self-learners, students seeking supplementary practice, and career changers looking to gain practical JavaScript skills."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Hands-on JavaScript: 60 Days free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The platform, as currently developed, is free to use. All lessons and projects are accessible by following the progression rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need any prior coding experience for Hands-on JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, the roadmap starts from the very basics of JavaScript. It is designed for beginners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What will I learn in 60 days with Hands-on JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You will learn fundamental JavaScript concepts, including variables, data types, operators, conditionals, loops, functions, arrays, objects, and an introduction to DOM manipulation, progressing towards more complex topics as outlined in the 60-day roadmap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are projects validated on Hands-on JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your code submissions are automatically validated by checking if the console output matches the expected output for each project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I skip lessons on Hands-on JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, lessons must be completed sequentially to ensure a strong foundational understanding. This is part of the anti-passive learning philosophy."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="landing-header">
+        <div class="container">
+            <h1>Hands-on JS</h1>
+            
+            <!-- Mobile Navigation Toggle Button -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <nav class="landing-nav" id="landing-nav">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <a href="index.html" class="cta-button-secondary">Launch App</a>
+            </nav>
+            
+            <!-- Navigation Overlay for Mobile -->
+            <div class="nav-overlay" id="nav-overlay"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Hands-on JavaScript in 60 Days</h2>
+                <p class="sub-headline">Your Project-Based Journey to Becoming a Confident Developer. Stop passively learning. Start building with Hands-on JavaScript!</p>
+                <a href="index.html" class="cta-button-primary">Start Learning Now</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>What is Hands-on JavaScript: 60 Days?</h2>
+                <article>
+                    <p><strong>Hands-on JavaScript: 60 Days is an online educational platform designed to teach beginners JavaScript programming through a structured, 60-day roadmap.</strong> The core philosophy is anti-passive learning, requiring users to complete three hands-on coding projects for each daily lesson to progress.</p>
+                    <p>It provides a clear path from foundational concepts to more advanced topics, ensuring a comprehensive understanding of JavaScript for web development. Each lesson focuses on a specific concept, immediately reinforced by practical coding exercises within an interactive environment.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="features" class="content-section alt-bg">
+            <div class="container">
+                <h2>How Does It Work?</h2>
+                <article>
+                    <p><strong>The platform unlocks lessons sequentially.</strong> Learners start with Day 1 and must complete all three coding projects for that day to unlock the next. Lessons 1-14 are initially available. After completing these, one new lesson (Days 15-60) unlocks per day, contingent on completing the previous day's projects. Progress is tracked using local browser storage.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Structured 60-Day Roadmap:</strong> Clear daily lessons and topics.</li>
+                        <li><strong>Project-Based Learning:</strong> 3 hands-on projects per lesson.</li>
+                        <li><strong>Interactive Code Editors:</strong> Built-in editors with simulated console output.</li>
+                        <li><strong>Automatic Validation:</strong> Projects marked complete upon correct code submission.</li>
+                        <li><strong>Progress Tracking:</strong> Local storage saves your completed lessons and projects.</li>
+                        <li><strong>Daily Unlocks:</strong> Encourages consistent learning after initial lessons.</li>
+                        <li><strong>Beginner-Friendly:</strong> Designed for those new to JavaScript.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Who Is This Platform For?</h2>
+                <article>
+                    <p>This platform is ideal for:</p>
+                    <ul>
+                        <li><strong>Absolute Beginners:</strong> Individuals with little to no prior JavaScript or programming experience.</li>
+                        <li><strong>Aspiring Web Developers:</strong> Anyone looking to build a strong foundation in JavaScript.</li>
+                        <li><strong>Self-Learners:</strong> Those who prefer a structured, hands-on approach.</li>
+                        <li><strong>Students:</strong> Individuals seeking supplementary project-based practice.</li>
+                        <li><strong>Career Changers:</strong> People looking to gain practical JavaScript skills.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="why-us" class="content-section alt-bg">
+            <div class="container">
+                <h2>Why Choose Hands-on JavaScript?</h2>
+                <article>
+                    <ul>
+                        <li><strong>Learn by Doing, Not Just Watching:</strong> Our anti-passive learning approach means you write code from day one.</li>
+                        <li><strong>Build Real-World Skills:</strong> Projects are designed to mimic tasks you'll encounter as a developer.</li>
+                        <li><strong>Stay Motivated:</strong> The daily unlock system and clear progression provide a sense of accomplishment.</li>
+                        <li><strong>Track Your Progress:</strong> See how far you've come, all saved in your browser.</li>
+                        <li><strong>No Setup Hassle:</strong> Code directly in the browser – no complex environment setup needed.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="faq" class="content-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>Is Hands-on JavaScript: 60 Days free?</h3>
+                    <p>The platform, as currently developed, is free to use. All lessons and projects are accessible by following the progression rules.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need any prior coding experience for Hands-on JavaScript?</h3>
+                    <p>No, the roadmap starts from the very basics of JavaScript. It is designed for beginners.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What will I learn in 60 days with Hands-on JavaScript?</h3>
+                    <p>You will learn fundamental JavaScript concepts, including variables, data types, operators, conditionals, loops, functions, arrays, objects, and an introduction to DOM manipulation, progressing towards more complex topics.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How are projects validated on Hands-on JavaScript?</h3>
+                    <p>Your code submissions are automatically validated by checking if the console output matches the expected output for each project.</p>
+                </div>
+                 <div class="faq-item">
+                    <h3>What if I get stuck on a project?</h3>
+                    <p>The platform encourages problem-solving. Review the lesson concept, experiment with your code, and use online resources to find solutions. The goal is to learn how to learn.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I skip lessons on Hands-on JavaScript?</h3>
+                    <p>No, lessons must be completed sequentially to ensure a strong foundational understanding. This is part of the anti-passive learning philosophy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Get Started on Your JavaScript Journey!</h2>
+                <p>Ready to transform from a JavaScript novice to a confident coder with Hands-on JavaScript? Your 60-day challenge starts now.</p>
+                <a href="index.html" class="cta-button-primary">Launch the Learning App</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="landing-footer">
+        <div class="container">
+            <p>&copy; 2025 Hands-on JavaScript: 60 Days. All rights reserved.</p>
+            <p>This landing page provides an overview. The full interactive learning experience is within the Hands-on JavaScript app.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const landingNav = document.getElementById('landing-nav');
+            const navOverlay = document.getElementById('nav-overlay');
+            
+            // Toggle navigation menu
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                landingNav.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+                
+                // Toggle aria-expanded for accessibility
+                const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+                navToggle.setAttribute('aria-expanded', !expanded);
+            });
+            
+            // Close menu when clicking overlay
+            navOverlay.addEventListener('click', function() {
+                navToggle.classList.remove('active');
+                landingNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+            
+            // Close menu when clicking a navigation link
+            const navLinks = landingNav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navToggle.classList.remove('active');
+                    landingNav.classList.remove('active');
+                    navOverlay.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+            
+            // Handle smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for header height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+/* landing-style.css */
+
+/* --- General Landing Page Styles --- */
+body.landing-page-body {
+    font-family: 'Work Sans', sans-serif;
+    color: #333B52; /* --text-color-light from main style */
+    background-color: #F8F7FA; /* --bg-color-light from main style */
+    margin: 0;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Landing Header --- */
+.landing-header {
+    background-color: #FFFFFF; /* White header */
+    padding: 15px 0;
+    border-bottom: 1px solid #ECE8F0; /* --sidebar-bg-light for a subtle border */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.landing-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-header h1 {
+    font-family: 'Gratisan', cursive, sans-serif;
+    color: #A98CCC; /* --primary-accent-light */
+    margin: 0;
+    font-size: 2em;
+}
+
+/* --- Navigation Styles --- */
+.landing-nav {
+    display: flex;
+    align-items: center;
+}
+
+.landing-nav a {
+    font-family: 'Work Sans', sans-serif;
+    color: #333B52; /* --text-color-light */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.landing-nav a:not(.cta-button-secondary)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #A98CCC; /* --primary-accent-light */
+    transition: width 0.3s ease;
+}
+
+.landing-nav a:not(.cta-button-secondary):hover::after {
+    width: 100%;
+}
+
+.landing-nav a:hover {
+    color: #A98CCC; /* --primary-accent-light */
+}
+
+/* --- Mobile Navigation --- */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1002;
+}
+
+.nav-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #A98CCC; /* --primary-accent-light */
+    transition: all 0.3s ease;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: #ECE8F0; /* --sidebar-bg-light */
+    color: #333B52; /* --text-color-light */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Gratisan', cursive, sans-serif;
+    font-size: 3em; /* Larger for hero */
+    margin-bottom: 20px;
+    color: #5B4B75; /* --secondary-accent-dark for a bit more punch */
+}
+
+.hero .sub-headline {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- CTA Buttons --- */
+.cta-button-primary, .cta-button-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.cta-button-primary {
+    background-color: #A98CCC; /* --primary-accent-light */
+    color: #FFFFFF; /* --button-text-light */
+}
+
+.cta-button-primary:hover {
+    background-color: #9370B8; /* --primary-accent-hover-light */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(169, 140, 204, 0.3);
+}
+
+.cta-button-secondary {
+    background-color: transparent;
+    color: #A98CCC; /* --primary-accent-light */
+    border: 2px solid #A98CCC; /* --primary-accent-light */
+}
+
+.cta-button-secondary:hover {
+    background-color: #A98CCC; /* --primary-accent-light */
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(169, 140, 204, 0.3);
+}
+
+/* --- Content Sections --- */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section h2 {
+    font-family: 'Gratisan', cursive, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #5B4B75; /* --secondary-accent-dark */
+}
+
+.content-section article p,
+.content-section article ul {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section article ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.content-section article li {
+    margin-bottom: 0.75em;
+}
+
+.alt-bg {
+    background-color: #FFFFFF; /* White background for alternating sections */
+}
+
+/* --- FAQ Section --- */
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    font-family: 'Gratisan', cursive, sans-serif;
+    font-size: 1.5em;
+    color: #A98CCC; /* --primary-accent-light */
+    margin-bottom: 10px;
+}
+
+/* --- Final CTA Section --- */
+.cta-section {
+    background-color: #A98CCC; /* --primary-accent-light */
+    color: #FFFFFF;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-family: 'Gratisan', cursive, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.cta-section .cta-button-primary {
+    background-color: #FFFFFF;
+    color: #A98CCC; /* --primary-accent-light */
+    border: 2px solid #FFFFFF;
+}
+
+.cta-section .cta-button-primary:hover {
+    background-color: #F8F7FA; /* --bg-color-light */
+    color: #9370B8; /* --primary-accent-hover-light */
+}
+
+/* --- Landing Footer --- */
+.landing-footer {
+    background-color: #2C2F3B; /* --bg-color-dark */
+    color: #E0E0E0; /* --text-color-dark */
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.landing-footer p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments for landing page */
+@media (max-width: 768px) {
+    /* Show hamburger menu */
+    .nav-toggle {
+        display: block;
+    }
+    
+    /* Hide navigation links by default */
+    .landing-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 30px 30px;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+    }
+    
+    /* When menu is active */
+    .landing-nav.active {
+        right: 0;
+    }
+    
+    /* Style navigation links for mobile */
+    .landing-nav a {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 1.1em;
+        width: 100%;
+    }
+    
+    /* Style CTA button for mobile */
+    .landing-nav .cta-button-secondary {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    /* Hamburger menu animation */
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* Overlay for when menu is open */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+    }
+    
+    /* Hero section adjustments */
+    .hero h2 {
+        font-size: 2.2em;
+    }
+    
+    .hero .sub-headline {
+        font-size: 1.1em;
+    }
+    
+    /* Content section adjustments */
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+    
+    .content-section article p,
+    .content-section article ul {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-header h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    
+    .content-section {
+        padding: 40px 0;
+    }
+    
+    .content-section h2 {
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+    
+    .faq-item h3 {
+        font-size: 1.3em;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.8em;
+    }
+    
+    .cta-button-primary, .cta-button-secondary {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
