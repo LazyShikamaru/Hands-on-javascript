@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-on JavaScript: 60 Days to Confident Developer</title>
+    <meta name="description" content="Learn JavaScript in 60 days with Hands-on JavaScript! Our project-based learning platform offers hands-on coding, real-world projects, and a clear roadmap from beginner to mastery. Start your JS journey today!">
+    <meta name="keywords" content="Hands-on JavaScript, JavaScript, learn JavaScript, JavaScript tutorial, coding, programming, web development, JavaScript projects, beginner JavaScript, JavaScript roadmap, 60 days of code">
+    <link rel="canonical" href="https://rbecepro.manus.space">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hands-on JavaScript: 60 Days to Confident Developer">
+    <meta property="og:description" content="Learn JavaScript in 60 days with Hands-on JavaScript! Our project-based learning platform offers hands-on coding, real-world projects, and a clear roadmap from beginner to mastery.">
+    <meta property="og:image" content="https://rbecepro.manus.space/social_preview.png">
+    <meta property="og:url" content="https://rbecepro.manus.space">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Hands-on JavaScript: 60 Days">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hands-on JavaScript: 60 Days to Confident Developer">
+    <meta name="twitter:description" content="Learn JavaScript in 60 days with Hands-on JavaScript! Our project-based learning platform offers hands-on coding, real-world projects, and a clear roadmap from beginner to mastery.">
+    <meta name="twitter:image" content="https://rbecepro.manus.space/social_preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gratisan" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+    <!-- Mobile Header (New) -->
+    <header class="mobile-header">
+        <div class="mobile-header-content">
+            <h1>Hands-on JS</h1>
+            <div class="mobile-controls">
+                <button id="mobile-theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sidebar Overlay (New) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <div class="app-container">
+        <aside id="sidebar" class="sidebar">
+            <header class="sidebar-header">
+                <h1>Hands-on JS</h1>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+            </header>
+            <nav id="lesson-nav" class="lesson-nav" aria-label="Main Navigation">
+                <!-- Lesson links will be dynamically populated here -->
+            </nav>
+            <div class="motivational-quote" role="status" aria-live="polite">
+                <p id="quote-text">Keep coding, you're doing great!</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="lesson-content" class="lesson-content-area" aria-live="polite">
+                <!-- Selected lesson content will be displayed here -->
+                <article class="lesson-placeholder">
+                    <h2>Welcome to Hands-on JavaScript!</h2>
+                    <p>Select a lesson from the sidebar to begin your journey.</p>
+                    <p>Remember, consistency is key. Try to complete your daily projects and avoid distractions. You can do this!</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="lessons-data.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- Mobile Navigation Script (New) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const sidebarOverlay = document.getElementById('sidebar-overlay');
+            const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+            
+            // Sync theme toggle buttons
+            function updateThemeButtons() {
+                if (document.body.classList.contains('dark-mode')) {
+                    document.getElementById('theme-toggle').textContent = '☀️';
+                    mobileThemeToggle.textContent = '☀️';
+                } else {
+                    document.getElementById('theme-toggle').textContent = '🌙';
+                    mobileThemeToggle.textContent = '🌙';
+                }
+            }
+            
+            // Initialize theme buttons
+            updateThemeButtons();
+            
+            // Mobile theme toggle
+            mobileThemeToggle.addEventListener('click', function() {
+                document.getElementById('theme-toggle').click();
+                updateThemeButtons();
+            });
+            
+            // Menu toggle
+            menuToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('active');
+                sidebarOverlay.classList.toggle('active');
+            });
+            
+            // Close sidebar when clicking overlay
+            sidebarOverlay.addEventListener('click', function() {
+                sidebar.classList.remove('active');
+                sidebarOverlay.classList.remove('active');
+            });
+            
+            // Close sidebar when clicking a lesson link (on mobile)
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768 && 
+                    e.target.closest('.lesson-nav') && 
+                    e.target.tagName === 'A') {
+                    sidebar.classList.remove('active');
+                    sidebarOverlay.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
