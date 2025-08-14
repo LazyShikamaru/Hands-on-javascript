@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h3>Project ${index + 1}: ${project.title}</h3>
                         <p>${project.description}</p>
                         <div class="code-editor-area">
-                            <textarea id="code-${project.id}" aria-label="Code editor for ${project.title}" rows="8">${project.starterCode || "// Start your code here"}</textarea>
+                            <textarea id="code-${project.id}" aria-label="Code editor for ${project.title}" rows="8" autocapitalize="off" spellcheck="false">${project.starterCode || "// Start your code here"}</textarea>
                             <div class="project-controls">
                                 <button class="run-code-btn" data-project-id="${project.id}">Run Code</button>
                                 <button class="submit-project-btn ${isProjectCompleted ? 'completed-submission' : ''}" 
@@ -352,4 +352,3 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- Start the App ---
     initApp();
 });
-
